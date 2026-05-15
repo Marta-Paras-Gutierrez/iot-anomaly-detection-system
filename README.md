@@ -73,7 +73,7 @@ Interactive Dashboard (Streamlit)
 
 ## Repository Structure
 
-```
+```text
 iot-anomaly-detection-system/
 │
 ├── data/
