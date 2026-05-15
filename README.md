@@ -50,7 +50,7 @@ Currently under active development.
 
 ## Planned Architecture
 
-```
+```text
 IoT Devices
      │
      ▼
