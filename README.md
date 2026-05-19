@@ -4,6 +4,15 @@ An intelligent network traffic monitoring and anomaly detection system for IoT e
 
 ---
 
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Machine Learning](https://img.shields.io/badge/Machine%20Learning-FF6F00?style=for-the-badge)
+![IoT](https://img.shields.io/badge/IoT-0A192F?style=for-the-badge)
+![Wireshark](https://img.shields.io/badge/Wireshark-1679A7?style=for-the-badge&logo=wireshark&logoColor=white)
+![GNS3](https://img.shields.io/badge/GNS3-EA4335?style=for-the-badge)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
+
+---
+
 ## Project Overview
 
 This project focuses on the design and implementation of a modular system capable of:
@@ -46,10 +55,10 @@ The system aims to:
 ## System Visuals
 
 ### Domestic IoT Topology
-![Domestic Topology](images/domestic-topology.png)
+![Domestic Topology](images/domestic_topology.png)
 
 ### Industrial IoT Topology
-![Industrial Topology](images/industrial-topology.png)
+![Industrial Topology](images/industrial_topology.png)
 
 ### Normal Traffic Monitoring
 ![Normal Traffic](images/normal-traffic-domestic.png)
