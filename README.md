@@ -17,6 +17,19 @@ The system combines network simulation, traffic analysis and AI-based anomaly de
 
 ---
 
+## Objectives
+
+The main objective of this project is to develop a modular and scalable system capable of detecting anomalous behaviour in IoT network environments through Machine Learning techniques.
+
+The system aims to:
+- Simulate realistic IoT traffic scenarios
+- Capture and analyse network behaviour
+- Identify abnormal traffic patterns
+- Compare supervised and unsupervised ML approaches
+- Provide interactive visualization tools for monitoring and analysis
+
+---
+
 ## Main Technologies
 
 - Python
@@ -27,6 +40,28 @@ The system combines network simulation, traffic analysis and AI-based anomaly de
 - Pandas
 - Scikit-learn
 - Network Traffic Analysis
+
+---
+
+## System Visuals
+
+### Domestic IoT Topology
+![Domestic Topology](images/domestic-topology.png)
+
+### Industrial IoT Topology
+![Industrial Topology](images/industrial-topology.png)
+
+### Normal Traffic Monitoring
+![Normal Traffic](images/normal-traffic-domestic.png)
+
+### Industrial Traffic Analysis
+![Industrial Traffic](images/normal-traffic-industrial.png)
+
+### Unreachable Destination Anomaly
+![Unreachable Destination](images/unreachable-destination-anomaly.png)
+
+### Simulated Reconnections Anomaly
+![Simulated Reconnections](images/simulated-reconnections-anomaly.png)
 
 ---
 
@@ -44,7 +79,13 @@ The system combines network simulation, traffic analysis and AI-based anomaly de
 
 ## Project Status
 
-Currently under active development.
+Core architecture and traffic simulation environments have been completed.
+
+Current work focuses on:
+- Traffic preprocessing
+- Feature engineering
+- Machine Learning model evaluation
+- Interactive dashboard integration
 
 ---
 
@@ -91,11 +132,13 @@ iot-anomaly-detection-system/
 
 ## Future Improvements
 
-- Real-time anomaly detection
-- Additional ML models
-- Docker deployment
-- Support for more IoT protocols
-- Advanced dashboard analytics
+- Real-time traffic monitoring
+- Deployment with Docker containers
+- Integration of additional anomaly detection models
+- Support for MQTT and CoAP protocols
+- Automated alert system
+- Advanced analytics dashboard
+- Scalable distributed architecture
 
 ---
 
