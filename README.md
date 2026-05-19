@@ -55,10 +55,10 @@ The system aims to:
 ## System Visuals
 
 ### Domestic IoT Topology
-![Domestic Topology](images/domestic_topology.png)
+![Domestic Topology](images/domestic_topology.PNG)
 
 ### Industrial IoT Topology
-![Industrial Topology](images/industrial_topology.png)
+![Industrial Topology](images/industrial_topology.PNG)
 
 ### Normal Traffic Monitoring
 ![Normal Traffic](images/normal-traffic-domestic.png)
