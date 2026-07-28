@@ -15,14 +15,11 @@ An intelligent network traffic monitoring and anomaly detection system for IoT e
 
 ## Project Overview
 
-This project focuses on the design and implementation of a modular system capable of:
+This project presents the design and implementation of a modular system for monitoring network traffic and detecting anomalies in simulated IoT environments.
 
-- Simulating IoT network environments
-- Capturing and processing network traffic
-- Detecting anomalous behaviours using Machine Learning
-- Visualizing network metrics and alerts interactively
+The workflow integrates IoT network simulation, traffic capture, data preprocessing, feature extraction and Machine Learning techniques to analyse network behaviour and identify anomalous activity.
 
-The system combines network simulation, traffic analysis and AI-based anomaly detection techniques to improve visibility and security in IoT environments.
+The project has been developed entirely in Python and includes an interactive dashboard for visualizing model performance and detection results.
 
 ---
 
@@ -31,6 +28,7 @@ The system combines network simulation, traffic analysis and AI-based anomaly de
 The main objective of this project is to develop a modular and scalable system capable of detecting anomalous behaviour in IoT network environments through Machine Learning techniques.
 
 The system aims to:
+
 - Simulate realistic IoT traffic scenarios
 - Capture and analyse network behaviour
 - Identify abnormal traffic patterns
@@ -39,7 +37,7 @@ The system aims to:
 
 ---
 
-## Main Technologies
+## Technologies
 
 - Python
 - Machine Learning
@@ -48,6 +46,7 @@ The system aims to:
 - Streamlit
 - Pandas
 - Scikit-learn
+- Matplotlib
 - Network Traffic Analysis
 
 ---
@@ -74,6 +73,22 @@ The system aims to:
 
 ---
 
+## Generated Visualizations
+
+### Model Comparison
+
+![Model Comparison](images/visualizations/model_comparison.png)
+
+### Anomaly Detection by Capture
+
+![Anomaly Detection](images/visualizations/anomalies_by_capture.png)
+
+### Random Forest Confusion Matrix
+
+![Confusion Matrix](images/visualizations/confusion_matrix.png)
+
+---
+
 ## Features
 
 - IoT network simulation
@@ -81,24 +96,27 @@ The system aims to:
 - Feature extraction
 - Supervised anomaly detection
 - Unsupervised anomaly detection
-- Interactive visualization dashboard
+- Automatic visualization generation
+- Interactive Streamlit dashboard
 - Modular architecture
 
 ---
 
 ## Project Status
 
-Core architecture and traffic simulation environments have been completed.
+The project has been completed and includes the full IoT traffic analysis pipeline:
 
-Current work focuses on:
-- Traffic preprocessing
-- Feature engineering
-- Machine Learning model evaluation
-- Interactive dashboard integration
+- PCAP traffic processing
+- Dataset preprocessing
+- Statistical feature extraction
+- Supervised and unsupervised Machine Learning
+- Model evaluation
+- Network anomaly detection
+- Interactive Streamlit dashboard
 
 ---
 
-## Planned Architecture
+## Project Workflow
 
 ```text
 IoT Devices
@@ -126,31 +144,112 @@ Interactive Dashboard (Streamlit)
 ```text
 iot-anomaly-detection-system/
 │
-├── data/
-├── notebooks/
-├── src/
-├── models/
 ├── captures/
-├── dashboard/
-├── docs/
+├── data/
 ├── images/
-└── results/
+├── models/
+├── notebooks/
+├── results/
+├── src/
+│   ├── data_processing/
+│   ├── detection/
+│   ├── machine_learning/
+│   ├── visualization/
+│   ├── config.py
+│   ├── utils.py
+│   └── main.py
+├── .gitignore
+├── LICENSE
+├── README.md
+└── requirements.txt
 ```
+
+---
+
+## Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/Marta-Paras-Gutierrez/iot-anomaly-detection-system.git
+cd iot-anomaly-detection-system
+```
+
+Create a virtual environment (recommended):
+
+```bash
+python -m venv .venv
+```
+
+Activate the virtual environment.
+
+**Windows**
+
+```bash
+.venv\Scripts\activate
+```
+
+**Linux / macOS**
+
+```bash
+source .venv/bin/activate
+```
+
+Install the project dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## Usage
+
+The project includes a console application that allows executing each stage of the pipeline independently or running the complete workflow.
+
+Launch the main menu:
+
+```bash
+python -m src.main
+```
+
+Alternatively, the interactive dashboard can be started directly:
+
+```bash
+streamlit run src/visualization/dashboard.py
+```
+
+The available modules include:
+
+- PCAP processing
+- Dataset preprocessing
+- Feature extraction
+- Machine Learning model training
+- Model evaluation
+- Traffic anomaly detection
+- Visualization generation
+- Interactive dashboard
 
 ---
 
 ## Future Improvements
 
+Possible future extensions include:
+
 - Real-time traffic monitoring
-- Deployment with Docker containers
-- Integration of additional anomaly detection models
-- Support for MQTT and CoAP protocols
-- Automated alert system
-- Advanced analytics dashboard
-- Scalable distributed architecture
+- Support for additional IoT protocols
+- Deep Learning-based anomaly detection
+- Docker deployment
+- Automated alert generation
+
+---
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for further details.
 
 ---
 
 ## Author
 
-Marta Parás
+**Marta Parás**
